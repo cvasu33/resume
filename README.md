@@ -1,3 +1,3 @@
 # Cristian Vasu – Resume
 
-📄 [Download Resume (PDF)](./Cristian_Vasu_Resume.pdf)
+📄 [View Resume (direct)](https://github.com/cvasu33/resume/raw/main/Cristian_Vasu_Resume.pdf)
