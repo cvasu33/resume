@@ -1,0 +1,250 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[normalem]{ulem}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    \textbf{\Huge \scshape Cristian Vasu} \\ 
+    \vspace{2pt}
+    \textbf{Software Engineer $|$ AI/ML Researcher $|$ Full-Stack Developer} \\
+    \vspace{1pt}
+    \small 330-206-8980 $|$ \href{mailto:cristian@cristianvasu.com}{\uline{{cristian@cristianvasu.com}}} $|$ 
+    \href{https://www.linkedin.com/in/cvasu}{\uline{linkedin.com/cvasu}} $|$
+    \href{https://github.com/cvasu33}{\uline{github.com/cvasu33}}
+\end{center}
+
+%-----------EDUCATION-----------
+\vspace{-1em}
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bowling Green State University}{Bowling Green, OH}
+      {Master of Science in Computer Science -- \textit{GPA: 3.75}}{Aug. 2024 -- Dec. 2025} 
+    \resumeItemListStart
+    \resumeItem{\textbf{Relevant Coursework:} Algorithm Design, AI for Software Engineering, Network Architecture, Computer \& Network Security, Secure Software Engineering, Big Data Analytics}
+    \resumeItemListEnd
+    
+    \resumeSubheading
+      {University of Mount Union}{Alliance, OH}
+      {Bachelor of Science in Computer Science \& Bachelor of Science in Financial Mathematics}{Aug. 2019 -- May 2023}
+    \resumeItemListStart
+    \resumeItem{\textbf{Relevant Coursework:} Software Engineering, Web \& Mobile Development, Data Structures, Database Systems}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+% %-----------Skills-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    % \textbf{Languages - Advanced:} Python, JavaScript, TypeScript, SQL \\
+    % \textbf{Languages - Proficient:} Java, C, HTML/CSS, Bash \\
+    \textbf{Languages:} Python, JavaScript, TypeScript, SQL \emph{(Advanced)} $|$ Java, C, HTML/CSS, Bash \emph{(Proficient)} \\
+    % \textbf{Frontend Technologies:} React.js, Angular, TailwindCSS, Vite, Leaflet \\
+    % \textbf{Backend Technologies:} Node.js, Flask, Express.js, RESTful APIs \\
+    \textbf{Front‑end:} React, Angular, Tailwind CSS, Vite, Leaflet $|$ \textbf{Back‑end:} Node.js, Express, Flask, REST APIs \\
+    \textbf{Databases \& Cloud:} MongoDB Atlas, PostgreSQL, AWS (S3, Lambda), Docker \\
+    \textbf{AI/ML \& Data Science:} OpenAI API, Mistral AI, LangChain, RAG, pandas, NumPy, SciPy \\
+    % \textbf{Developer Tools:} Git, VS Code \\
+    }}
+ \end{itemize}
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      % \resumeProjectHeading
+      %     {\textbf{SolarProx 3.0} $|$ \emph{PHP, Shell, CSS, JavaScript}}{Cybersecurity Project -- 2023}
+      %     \resumeItemListStart
+      %       \resumeItem{Developed a web interface to integrate connections with a \textbf{Proxmox server} for penetration testing}
+      %       \resumeItem{Implemented server-side functionality using \textbf{PHP} and \textbf{Shell} scripting to manage virtualized environments}
+      %       \resumeItem{Designed and styled the frontend with \textbf{CSS} and \textbf{JavaScript} to enhance user experience}
+      %     \resumeItemListEnd
+
+        \resumeProjectHeading
+          {\textbf{AI Pull Request Research} $|$ \emph{Python, OpenAI API, GitHub API}}{Master's Thesis -- 2025}
+          \resumeItemListStart
+            \resumeItem{Engineering a \textbf{GitHub} application that uses the \textbf{OpenAI API} to automatically generate PR Descriptions}
+            \resumeItem{Architecting a unified ingestion pipeline that combines issue links, code diffs, commit messages, \newline and file metadata into an \textbf{agentic LLM-driven RAG framework}}
+            \resumeItem{Applying \textbf{input filtering} to increase efficiency and improve quality of generations}
+            % \resumeItem{Designing a dataset with a \textbf{catered schema} compatible with current and future evaluation of PR Summarization }
+          \resumeItemListEnd
+
+      
+      \resumeProjectHeading
+          {\textbf{Travel Health Advisor} $|$ \emph{React, Mistral AI, MongoDB, Tailwind, Vite}}{BGSUHacks -- 2025}
+          \resumeItemListStart
+            \resumeItem{Architected a travel health platform that provides tailored medical guidance to users via an AI-powered advisor; \textbf{Awarded 1st place in AI/ML track}}
+            \resumeItem{Dynamically retrieved disease data based on user input from a \textbf{MongoDB Atlas} database initiated by user interaction with a Leaflet-based interactive map}
+            \resumeItem{The \textbf{Mistral AI} integrated chatbot utilized user health data to provide personalized feedback presented through a \textbf{responsive interface} that delivers an \textbf{intuitive experience}}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{RocketGrades LMS} $|$ \emph{Angular, TailwindCSS, Node.js, AWS S3, Auth0, Mistral AI, MongoDB}}{RocketHacks -- 2025}
+          \resumeItemListStart
+             \resumeItem{Created a web-based Learning Management System that autogrades using \textbf{LangChain} with \textbf{Mistral AI} \\ \textbf{Awarded 1st place in Auth0 track}}
+            \resumeItem{Implemented \textbf{Auth0} for secure, role-based access control, protecting data privacy for users}
+            \resumeItem{Integrated \textbf{AWS S3} and \textbf{MongoDB Atlas} for scalable file storage and real-time data retrieval}
+            % \resumeItem{Automated assignment grading and feedback through \textbf{LangChain} with \textbf{Mistral AI}}
+          \resumeItemListEnd
+          
+      % \resumeProjectHeading
+      %     {\textbf{Game Finder} $|$ \emph{Python, Flask, SQL, HTML/CSS}}{WayneHacks3 -- 2025}
+      %     \resumeItemListStart
+      %       \resumeItem{Developed a web application recommending video games based on user preferences such as genre, difficulty, and available time}
+      %       \resumeItem{Utilized a SQLite database to store and manage game information, ensuring efficient data retrieval}
+      %       \resumeItem{Designed user-friendly interfaces with HTML/CSS, enhancing user experience}
+      %     \resumeItemListEnd
+
+      % \resumeProjectHeading
+      %     {\textbf{Rubiks Cube Solver} $|$ \emph{Java, Processing, Algorithm Design}}{Undergraduate Capstone -- 2022}
+      %     \resumeItemListStart
+      %       \resumeItem{Developed a virtual Rubik’s Cube solver using \textbf{Java} and \textbf{Processing}, applying 3D matrix transformations to represent cube turn mechanics as part of a mathematics research project}
+      %       \resumeItem{Applied \textbf{group theory} and \textbf{combinatorial analysis} to study cube permutations, implementing solving algorithms inspired by established methods}
+      %       \resumeItem{Incorporated \textbf{PeasyCam} for real-time 3D visuals, illustrating cube transformations through Rubik's Cube notation and enhancing comprehension of algorithm steps}
+      %     \resumeItemListEnd
+      
+    \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+% -------------------------------------------
+
+    \resumeSubheading
+      {Software Engineering Intern}{Jun. 2020 -- Aug. 2020}
+      {Alliance for Children \& Families}{Alliance, OH}
+      \resumeItemListStart
+        \resumeItem{Architected a website that provided health and wellness information to a community of over \textbf{20,000} individuals}
+        \resumeItem{Collaborated with team members to gather user feedback and make iterative improvements to the website's features and functionality}
+        \resumeItem{Tested and \textbf{debugged} code to ensure  functionality and performance met quality standards prior to deployment}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Real-Estate Technology Consultant}{Jun. 2018 -- Present}{Horizon Investments}{Alliance, OH}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{Excel dashboards} using \textbf{VBA macros} to track renovation costs and \textbf{projected ROI} for properties}
+        \resumeItem{Performed \textbf{demolition, cleaning, landscaping}, and \textbf{installations} to fully renovate properties}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Mathematics and Statistics Tutor}{Dec. 2024 -- Present}{BGSU Learning Commons}{Bowling Green, OH}
+      \resumeItemListStart
+        \resumeItem{Assisted students with math and statistics concepts, fostering \textbf{problem-solving} and independent learning skills}
+        \resumeItem{Led \textbf{8-10 weekly sessions} across calculus, algebra, and statistics, helping tutees \textbf{lift exam scores 1 letter grade} on average}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+%-------------------------------------------
+\end{document}
